@@ -5,6 +5,7 @@ global.lives--
 
 if global.lives <= 0 {
 	room_goto(rm_end_win)
+	global.hell = true
 }
 
 

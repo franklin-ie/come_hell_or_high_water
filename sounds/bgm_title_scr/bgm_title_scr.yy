@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"bgm_title_scr",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":16.849083,
+  "name":"bgm_title_scr",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bgm_title_scr.wav",
+  "type":0,
+  "volume":1.0,
+}

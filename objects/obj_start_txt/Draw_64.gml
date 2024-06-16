@@ -21,8 +21,7 @@ function update_text() {
 		draw_set_halign(fa_left)
 		
 		draw_text_color(380, 940, text_store[index], c_black, c_black, c_black, c_black, 1)
-		if keyboard_check_pressed(vk_space) && !wait {
-			wait = true
+		if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face2)) && !wait {			wait = true
 			index++
 			alarm_set(1, 5)
 			update_text()

@@ -26,23 +26,24 @@ function update_text() {
 				instance_destroy(obj_old_man_passive)
 				instance_create_layer(
 					960,
-					364,
+					428,
 					"oldMan",
 					obj_ded_old_man
 				)
 				instance_create_layer(
 					880,
-					364,
+					428,
 					"moneyWarp",
 					obj_money
 				)
 				execute_once = true
+				obj_plr.plr_speed = 5
+				
 			}
 		}
 		
 		draw_text_color(380, 940, text_store[index], _color, _color, _color, _color, 1)
-		if keyboard_check_pressed(vk_space) && !wait {
-			wait = true
+		if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face2)) && !wait {			wait = true
 			index++
 			alarm_set(1, 5)
 			update_text()

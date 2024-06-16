@@ -16,3 +16,4 @@ global.old_woman_speed = 0.5
 global.old_man_reload_time = 1.5 // secs
 global.difficulty = true
 global.spawn_time_sec = 1.5
+global.car_speed = 10

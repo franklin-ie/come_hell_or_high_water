@@ -15,7 +15,7 @@ walking_sound = true
 
 global.money = 0
 global.has_money = false
-global.has_weapon = true
+global.has_weapon = false
 global.collision_run = false
 global.win = false
 global.hell = false

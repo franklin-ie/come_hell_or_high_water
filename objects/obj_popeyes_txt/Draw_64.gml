@@ -6,7 +6,7 @@
 function update_text() {
 	var text_store = [
 		"You reach into your wallet",
-		"\nWould you like to enter? Y/N (keyboard)"
+		"\nWould you like to enter? Y[Y]/N[X]"
 	]
 	if msg == 1 {
 		if index >= array_length(text_store) {
@@ -29,15 +29,14 @@ function update_text() {
 		
 		draw_text_color(380, 940, _msg + text_store[index], _color, _color, _color, _color, 1)
 		if !(index == array_length(text_store) - 1) {
-			if keyboard_check_pressed(vk_space) && !wait {
-				wait = true
+			if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face2)) && !wait {				wait = true
 				index++
 				alarm_set(1, 5)
 				update_text()
 			}
 		}
 		else {
-			if keyboard_check_pressed(ord("Y")) {
+			if (keyboard_check_pressed(ord("Y")) || gamepad_button_check(0, gp_face4)) {
 				if global.hell {
 					obj_plr.x = 940
 					obj_plr.y = 900
@@ -49,7 +48,7 @@ function update_text() {
 				}
 				index++
 			}
-			if keyboard_check(ord("N")) {
+			if (keyboard_check(ord("N")) || gamepad_button_check(0, gp_face3)) {
 				draw_text_color(380, 940, "...", _color, _color, _color, _color, 1)
 				index++
 			}

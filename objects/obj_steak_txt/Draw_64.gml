@@ -5,7 +5,7 @@
 
 function update_text() {
 	var text_store = [
-		"You've acquired the SteakHouse launcher!\nPress 'Z' to use when you need it."
+		"You've acquired the SteakHouse launcher!\nPress 'Z', left MB, or [RT] to use in battle."
 	]
 	if msg == 1 {
 		if index >= array_length(text_store) {
@@ -20,8 +20,7 @@ function update_text() {
 		_color = c_red
 				
 		draw_text_color(380, 940, text_store[index], _color, _color, _color, _color, 1)
-		if keyboard_check_pressed(vk_space) && !wait {
-			wait = true
+		if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face2)) && !wait {			wait = true
 			index++
 			alarm_set(1, 5)
 			update_text()

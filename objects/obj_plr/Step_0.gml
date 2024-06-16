@@ -2,18 +2,35 @@
 // You can write your code in this editor
 
 function walking() {
-	var _right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-	var _left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-	var _up = keyboard_check(vk_up) || keyboard_check(ord("W"));
-	var _down = keyboard_check(vk_down) || keyboard_check(ord("S"));
+	
+	var _right = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(0, gp_padr);
+	var _left = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0, gp_padl);
+	var _up = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu);
+	var _down = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd);
+	
+	var _gamepad_horizontal = gamepad_axis_value(0, gp_axislh)
+	var _gamepad_vertical = gamepad_axis_value(0, gp_axislv)
+	
+	gamepad_set_axis_deadzone(0, 0.05)
+	
+//	var _gamepad_horizontal = gamepad_axis_value(0, gp_axislh)
+//	var _gamepad_vertical = gamepad_axis_value(0, gp_axislv)
 
-	var _xinput = _right - _left;
-	var _yinput = _down - _up;
+	var _xinput = _right - _left + _gamepad_horizontal;
+	var _yinput = _down - _up + _gamepad_vertical;
 	
 	var _xdir = 0
 	var _ydir = 0
-	
-	if _xinput == 0 && _yinput == 0 {
+
+	var _gamepad_dir = point_direction(0, 0, _gamepad_horizontal, _gamepad_vertical)
+
+//	move_and_collide(_gamepad_horizontal * plr_speed, _gamepad_vertical * plr_speed, [obj_wall, obj_invis_wall])	
+
+	if _gamepad_dir != 0 {
+		direction = _gamepad_dir
+	}
+
+	else if _xinput == 0 && _yinput == 0 {
 		direction = direction
 	}
 	
@@ -56,7 +73,12 @@ function walking() {
 		direction = _xdir + _ydir
 	}
 
-	move_and_collide(_xinput * plr_speed, _yinput * plr_speed, [obj_wall, obj_invis_wall])
+	if _gamepad_horizontal != 0 || _gamepad_vertical != 0 {
+		move_and_collide(_gamepad_horizontal * plr_speed, _gamepad_vertical * plr_speed, [obj_wall, obj_invis_wall])
+	}
+	else {
+		move_and_collide(_xinput * plr_speed, _yinput * plr_speed, [obj_wall, obj_invis_wall])
+	}
 	return _xinput != 0 || _yinput != 0
 }
 
@@ -65,7 +87,10 @@ function walking() {
 if global.allow_move {
 	var _has_walked = false
 	var _sound
+	
 	if walking() {
+		if (room == rm_old_man) plr_speed = 8
+		
 		_has_walked = true
 		if walking_sound {
 			_sound = audio_play_sound(snd_walking, 5, false)
@@ -131,4 +156,14 @@ else if room == rm_popeyes && global.woman_activate {
 	
 	global.woman_activate = false
 	global.win_woman = true
+}
+
+if (keyboard_check(ord("Z")) || gamepad_button_check_pressed(0, gp_shoulderrb) || mouse_check_button_pressed(mb_left)) {
+	if (room == rm_old_man || room == rm_old_woman) && can_shoot && global.has_weapon {
+		var _obj_to_shoot = obj_banana_peel
+		if global.mr_lopez _obj_to_shoot = obj_steak
+		instance_create_layer(x, y, "objProjectiles", _obj_to_shoot)
+		can_shoot = false
+		alarm_set(0, global.reload_time * 60) // goes by frames
+	}
 }

@@ -7,7 +7,7 @@ function update_text() {
 	var text_store = [
 		"Thank you, young lad!",
 		"Now, I'll be on my merry way to go home and\nbeyond.",
-		"Without your help, I wouldn't have made it\nover those nasty\ncars! Imagine trying to run\nover an old lady...",
+		"Without your help, I wouldn't have made it\npast those nasty cars! Imagine trying to run\nover an old lady...",
 		"Have some candy money, boy!",
 		"You got 10000 dollars!"
 	]
@@ -34,8 +34,7 @@ function update_text() {
 		}
 		
 		draw_text_color(380, 940, text_store[index], _color, _color, _color, _color, 1)
-		if keyboard_check_pressed(vk_space) && !wait {
-			wait = true
+		if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face2)) && !wait {			wait = true
 			index++
 			alarm_set(1, 5)
 			update_text()

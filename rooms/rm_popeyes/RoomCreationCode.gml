@@ -15,7 +15,7 @@ if global.hell && global.money != 0 {
 	instance_destroy(obj_warning_man_trigger)
 	instance_create_layer(
 					960,
-					364,
+					428,
 					"oldMan",
 					obj_ded_old_man
 				)
@@ -32,7 +32,19 @@ audio_play_sound(bgm_airship_serenity, 1, true)
 
 if global.difficulty {
 	obj_plr.x = 940
-	obj_plr.y = 960
+	obj_plr.y = 1000
 	global.difficulty = false
+	obj_plr.speed = 0
+}
+
+if !global.first_try && !global.hell {
+	obj_plr.x = 940
+	obj_plr.y = 1000
+	global.lives = 3
+	global.old_woman_speed = 2
+	global.has_money = false
+	global.has_weapon = false
+	global.money = 0
+	instance_destroy(obj_plr_platformer)
 	obj_plr.speed = 0
 }
