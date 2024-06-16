@@ -8,7 +8,7 @@ instance_create_layer(
 	obj_money_txt
 )
 
-global.has_money = true
+global.money += 100
 
 audio_play_sound(snd_cha_ching, 5, false)
 

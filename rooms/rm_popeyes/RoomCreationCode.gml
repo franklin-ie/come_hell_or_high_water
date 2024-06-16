@@ -42,7 +42,6 @@ if !global.first_try && !global.hell {
 	obj_plr.y = 1000
 	global.lives = 3
 	global.old_woman_speed = 2
-	global.has_money = false
 	global.has_weapon = false
 	global.money = 0
 	instance_destroy(obj_plr_platformer)

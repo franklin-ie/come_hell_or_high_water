@@ -11,3 +11,10 @@ wait = false
 global.allow_move = false
 
 execute_once = false
+
+text_store = [
+	"Ouch, ouch... my back!",
+	"..."
+]
+
+color = c_black

@@ -7,7 +7,7 @@ global.collision_run = true
 
 alarm_set(0, 30)
 
-if global.has_money {
+if global.money > 0 {
 	instance_create_layer(
 		0,
 		0,

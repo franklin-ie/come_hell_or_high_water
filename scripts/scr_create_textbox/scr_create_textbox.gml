@@ -1,27 +1,13 @@
-/// @description https://forum.gamemaker.io/index.php?threads/text-popup-when-opening-a-chest.97093/
+// v2.3.0的脚本资产已更改，请参见\ n // https://help.yoyogames.com/hc/en-us/articles/360005277377
 
-
-
-msg = 0
-
-alarm_set(0, 30)
-
-index = 0
-wait = false
-global.allow_move = false
-
-text_store = [
-	"Aw, shucks. Guess I'm getting what I deserved.",
-	"<W>/[A]: jump, <S>/[X]: phase through platforms",
-]
-
-color = c_black
-
-// needs its own func bc of lack of sequence (camera)
-function txt() {
+/// @function							scr_create_textbox(_last_color)
+/// @description						Creates a generic textbox used for communication 
+/// @return {void}
+function scr_create_textbox() {
 	if msg == 1 {
 		if index >= array_length(text_store) {
 			global.allow_move = true
+			layer_sequence_destroy(seq)
 			instance_destroy()
 			return
 		}
@@ -34,7 +20,7 @@ function txt() {
 			wait = true
 			index++
 			alarm_set(1, 5)
-			txt()
+			scr_create_textbox()
 		}
 	}
 }

@@ -9,3 +9,9 @@ seq = layer_sequence_create("textBox", 960, 700, seq_txtbox)
 index = 0
 wait = false
 global.allow_move = false
+
+text_store = [
+	"You've acquired the banana launcher!\nPress 'Z', left MB, or [RT] to use in battle."
+]
+
+color = c_red

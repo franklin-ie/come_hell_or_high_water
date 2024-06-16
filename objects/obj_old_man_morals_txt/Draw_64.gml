@@ -4,10 +4,6 @@
 // RUN EVERY FRAME; ONLY PUT CONSTANTS HERE
 
 function update_text() {
-	var text_store = [
-		"The old man's eyes are shut,\nhis body limp and weak.",
-		"Would you like to save the old man?\nfor $100? Y[Y]/N[X] (keyboard/controller)"
-	]
 	if msg == 1 {
 		if index >= array_length(text_store) {
 			global.allow_move = true
