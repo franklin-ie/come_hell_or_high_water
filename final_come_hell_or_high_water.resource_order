@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings":[
+  "FolderOrderSettings": [
     {"name":"Animation Curves","order":9,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":10,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":6,"path":"folders/Fonts.yy",},
@@ -41,7 +41,7 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
     {"name":"Video","order":17,"path":"folders/Video.yy",},
   ],
-  "ResourceOrderSettings":[
+  "ResourceOrderSettings": [
     {"name":"obj_banana_gun","order":8,"path":"objects/obj_banana_gun/obj_banana_gun.yy",},
     {"name":"obj_banana_peel","order":2,"path":"objects/obj_banana_peel/obj_banana_peel.yy",},
     {"name":"obj_banana_txt","order":6,"path":"objects/obj_banana_txt/obj_banana_txt.yy",},
@@ -133,7 +133,6 @@
     {"name":"bgm_suction","order":7,"path":"sounds/bgm_suction/bgm_suction.yy",},
     {"name":"bgm_title_scr","order":15,"path":"sounds/bgm_title_scr/bgm_title_scr.yy",},
     {"name":"bgm_yay","order":9,"path":"sounds/bgm_yay/bgm_yay.yy",},
-    {"name":"DONT_SHIP_bgm_moanin_bobby_timmons","order":11,"path":"sounds/DONT_SHIP_bgm_moanin_bobby_timmons/DONT_SHIP_bgm_moanin_bobby_timmons.yy",},
     {"name":"snd_acquired","order":17,"path":"sounds/snd_acquired/snd_acquired.yy",},
     {"name":"snd_banana_splat","order":12,"path":"sounds/snd_banana_splat/snd_banana_splat.yy",},
     {"name":"snd_bonk","order":16,"path":"sounds/snd_bonk/snd_bonk.yy",},
@@ -143,7 +142,6 @@
     {"name":"snd_ding","order":18,"path":"sounds/snd_ding/snd_ding.yy",},
     {"name":"snd_erupt","order":19,"path":"sounds/snd_erupt/snd_erupt.yy",},
     {"name":"snd_honk","order":9,"path":"sounds/snd_honk/snd_honk.yy",},
-    {"name":"snd_poop_splat","order":10,"path":"sounds/snd_poop_splat/snd_poop_splat.yy",},
     {"name":"snd_siren","order":6,"path":"sounds/snd_siren/snd_siren.yy",},
     {"name":"snd_walking","order":14,"path":"sounds/snd_walking/snd_walking.yy",},
     {"name":"bg_difficulty","order":11,"path":"sprites/bg_difficulty/bg_difficulty.yy",},

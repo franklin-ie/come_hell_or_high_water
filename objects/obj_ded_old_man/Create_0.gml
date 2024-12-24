@@ -3,7 +3,7 @@
 play_sound = true
 
 if play_sound {
-	audio_play_sound(snd_poop_splat, 10, false)
+	audio_play_sound(snd_banana_splat, 10, false)
 }
 
 play_sound = false

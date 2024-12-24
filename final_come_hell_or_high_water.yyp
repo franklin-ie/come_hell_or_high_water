@@ -1,15 +1,15 @@
 {
-  "$GMProject":"",
-  "%Name":"final_come_hell_or_high_water",
-  "AudioGroups":[
+  "$GMProject": "",
+  "%Name": "final_come_hell_or_high_water",
+  "AudioGroups": [
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
-  "configs":{
-    "children":[],
-    "name":"Default",
+  "configs": {
+    "children": [],
+    "name": "Default",
   },
-  "defaultScriptType":1,
-  "Folders":[
+  "defaultScriptType": 1,
+  "Folders": [
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -52,17 +52,17 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Video","folderPath":"folders/Video.yy","name":"Video","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[
+  "IncludedFiles": [
     {"$GMIncludedFile":"","%Name":"fnt_monocraft.otf","CopyToMask":-1,"filePath":"datafiles","name":"fnt_monocraft.otf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"manim_math_showcase.mp4","CopyToMask":-1,"filePath":"datafiles","name":"manim_math_showcase.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
-  "isEcma":false,
-  "LibraryEmitters":[],
-  "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+  "isEcma": false,
+  "LibraryEmitters": [],
+  "MetaData": {
+    "IDEVersion":"2024.200.0.494",
   },
-  "name":"final_come_hell_or_high_water",
-  "resources":[
+  "name": "final_come_hell_or_high_water",
+  "resources": [
     {"id":{"name":"obj_ash","path":"objects/obj_ash/obj_ash.yy",},},
     {"id":{"name":"obj_banana_gun","path":"objects/obj_banana_gun/obj_banana_gun.yy",},},
     {"id":{"name":"obj_banana_peel","path":"objects/obj_banana_peel/obj_banana_peel.yy",},},
@@ -167,7 +167,6 @@
     {"id":{"name":"bgm_suction","path":"sounds/bgm_suction/bgm_suction.yy",},},
     {"id":{"name":"bgm_title_scr","path":"sounds/bgm_title_scr/bgm_title_scr.yy",},},
     {"id":{"name":"bgm_yay","path":"sounds/bgm_yay/bgm_yay.yy",},},
-    {"id":{"name":"DONT_SHIP_bgm_moanin_bobby_timmons","path":"sounds/DONT_SHIP_bgm_moanin_bobby_timmons/DONT_SHIP_bgm_moanin_bobby_timmons.yy",},},
     {"id":{"name":"snd_acquired","path":"sounds/snd_acquired/snd_acquired.yy",},},
     {"id":{"name":"snd_banana_splat","path":"sounds/snd_banana_splat/snd_banana_splat.yy",},},
     {"id":{"name":"snd_bonk","path":"sounds/snd_bonk/snd_bonk.yy",},},
@@ -177,7 +176,6 @@
     {"id":{"name":"snd_ding","path":"sounds/snd_ding/snd_ding.yy",},},
     {"id":{"name":"snd_erupt","path":"sounds/snd_erupt/snd_erupt.yy",},},
     {"id":{"name":"snd_honk","path":"sounds/snd_honk/snd_honk.yy",},},
-    {"id":{"name":"snd_poop_splat","path":"sounds/snd_poop_splat/snd_poop_splat.yy",},},
     {"id":{"name":"snd_siren","path":"sounds/snd_siren/snd_siren.yy",},},
     {"id":{"name":"snd_walking","path":"sounds/snd_walking/snd_walking.yy",},},
     {"id":{"name":"bg_difficulty","path":"sprites/bg_difficulty/bg_difficulty.yy",},},
@@ -272,9 +270,9 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_x","path":"sprites/spr_x/spr_x.yy",},},
   ],
-  "resourceType":"GMProject",
-  "resourceVersion":"2.0",
-  "RoomOrderNodes":[
+  "resourceType": "GMProject",
+  "resourceVersion": "2.0",
+  "RoomOrderNodes": [
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_difficulty","path":"rooms/rm_difficulty/rm_difficulty.yy",},},
     {"roomId":{"name":"rm_popeyes","path":"rooms/rm_popeyes/rm_popeyes.yy",},},
@@ -291,8 +289,8 @@
     {"roomId":{"name":"rm_parkour_lvl_2_mr_lopez","path":"rooms/rm_parkour_lvl_2_mr_lopez/rm_parkour_lvl_2_mr_lopez.yy",},},
     {"roomId":{"name":"rm_parkour_lvl_2","path":"rooms/rm_parkour_lvl_2/rm_parkour_lvl_2.yy",},},
   ],
-  "templateType":"game",
-  "TextureGroups":[
+  "templateType": "game",
+  "TextureGroups": [
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }
