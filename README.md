@@ -6,6 +6,11 @@ A 2D GameMaker game with a stream of consciousness flow of random ideas from a d
 - 2D platformer with interesting physics
 - difficulty choices that meaningfully affect gameplay (especially at the hardest difficulty)
 
+## Screenshots
+![difficulty selection screen](./screenshots/difficulty.png)
+![maze game](./screenshots/maze.png)
+![platformer kitchen area](./screenshots/kitchen.png)
+
 ## Sounds
 All sounds used are credit in [sounds.md](./sounds/sounds.md).
 
