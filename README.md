@@ -1,10 +1,11 @@
 # come_hell_or_high_water
-A 2D GameMaker game with a stream of consciousness flow of random ideas from a diverse and nuanced population of individuals. Essentially an experiment
+A 2D GameMaker game with a stream of consciousness flow of random ideas from a diverse and nuanced population of individuals.
 
 ## Features
 - 2D maze game with boss battle
 - 2D platformer with interesting physics
 - difficulty choices that meaningfully affect gameplay (especially at the hardest difficulty)
+- controller support!
 
 ## Screenshots
 ![difficulty selection screen](./screenshots/difficulty.png)
