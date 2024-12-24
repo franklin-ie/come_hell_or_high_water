@@ -13,7 +13,7 @@ A 2D GameMaker game with a stream of consciousness flow of random ideas from a d
 ![platformer kitchen area](./screenshots/kitchen.png)
 
 ## Buliding
-Compiling is confusing; the last confirmed version tested on Linux for GX.games is v2024.200.0.494. The last working Windows build was from [November 2023](https://releases.gamemaker.io/release-notes/2023/11). The current November 2024 build doesn't compile.
+Compiling is confusing; the last confirmed version tested on Linux for GX.games is v2024.200.0.494. The last tesed working Windows build is from [November 2023](https://releases.gamemaker.io/release-notes/2023/11). The current November 2024 build doesn't compile.
 
 ## Contributors
 - Frankie
