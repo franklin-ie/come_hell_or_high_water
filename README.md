@@ -1,4 +1,4 @@
-# come_hell_or_high_water
+# Come Hell or High Water
 A 2D GameMaker game with a stream of consciousness flow of random ideas from a diverse and nuanced population of individuals.
 
 ## Features
@@ -12,11 +12,15 @@ A 2D GameMaker game with a stream of consciousness flow of random ideas from a d
 ![maze game](./screenshots/maze.png)
 ![platformer kitchen area](./screenshots/kitchen.png)
 
+## Buliding
+Compiling is confusing; the last confirmed version tested on Linux for GX.games is v2024.200.0.494. The last working Windows build was from [November 2023](https://releases.gamemaker.io/release-notes/2023/11). The current November 2024 build doesn't compile.
+
+## Contributors
+- Frankie
+- Stephanie
+
 ## Sounds
 All sounds used are credit in [sounds.md](./sounds/sounds.md).
-
-## Buliding
-Compiling is confusing; the last confirmed version tested on Linux for GX.games is v2024.200.0.494. The last working Windows build was from December 2023. The current November 2024 build doesn't compile.
 
 ## License
 The project uses the [MIT License](https://mit-license.org/).
