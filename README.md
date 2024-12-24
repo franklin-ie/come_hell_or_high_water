@@ -7,7 +7,10 @@ A 2D GameMaker game with a stream of consciousness flow of random ideas from a d
 - difficulty choices that meaningfully affect gameplay (especially at the hardest difficulty)
 
 ## Sounds
-All sounds used are credit in sounds.md.
+All sounds used are credit in [sounds.md](./sounds/sounds.md).
 
 ## Buliding
 Compiling is confusing; the last confirmed version tested on Linux for GX.games is v2024.200.0.494. The last working Windows build was from December 2023. The current November 2024 build doesn't compile.
+
+## License
+The project uses the [MIT License](https://mit-license.org/).
